@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chatbot Widget Demo</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 20px;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            background: #f5f5f5;
+        }
+        .demo-content {
+            max-width: 800px;
+            margin: 0 auto;
+            background: white;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        h1 { color: #333; }
+        p { color: #666; line-height: 1.6; }
+        .config-example {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 5px;
+            margin: 20px 0;
+        }
+        code {
+            background: #e9ecef;
+            padding: 2px 6px;
+            border-radius: 3px;
+            font-family: monospace;
+        }
+    </style>
+</head>
+<body>
+    <div class="demo-content">
+        <h1>🤖 Chatbot Widget Demo</h1>
+        <p>This is a demonstration of the embeddable chatbot widget. The chat widget will appear in the bottom right corner.</p>
+        
+        <h2>Integration Example</h2>
+        <div class="config-example">
+            <code>
+                &lt;div id="chatbot-widget"&gt;&lt;/div&gt;<br>
+                &lt;script src="chatbot-widget.js"&gt;&lt;/script&gt;<br>
+                &lt;script&gt;<br>
+                &nbsp;&nbsp;ChatbotWidget.mount({<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;containerId: 'chatbot-widget',<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;socketUrl: 'http://localhost:5001',<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;userId: 'user123',<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;title: 'Support Chat',<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;theme: 'light'<br>
+                &nbsp;&nbsp;});<br>
+                &lt;/script&gt;
+            </code>
+        </div>
+        
+        <p>Try clicking the chat button and ask questions about company policies or general inquiries!</p>
+    </div>
+
+    <div id="root"></div> <!-- For development -->
+    
+    <!-- Production embedding example -->
+    <!-- 
+    <div id="chatbot-widget"></div>
+    <script>
+        // This will be available when using the built widget
+        if (window.ChatbotWidget) {
+            ChatbotWidget.mount({
+                containerId: 'chatbot-widget',
+                socketUrl: 'http://localhost:5001',
+                userId: 'demo-user',
+                title: 'Support Chat',
+                theme: 'light',
+                primaryColor: '#007bff'
+            });
+        }
+    </script>
+    -->
+</body>
+</html>
