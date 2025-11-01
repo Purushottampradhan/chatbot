@@ -1,7 +1,7 @@
-# 🎉 omplete Document Validation System
+# Complete Document Validation System
 
 
-## 🎯 Quick Start
+## Quick Start
 
 ### 1. Setup 
 
@@ -58,9 +58,9 @@ Open chatbot → Type **"Hi"** → Start collecting documents!
 
 ---
 
-## 📖 Documentation Guide
+## Documentation Guide
 
-## 🎬 How It Works
+## How It Works
 
 ### User Types "Hi"
 
@@ -97,12 +97,12 @@ Phone
 ├─ Validation: Pattern
 └─ Storage: MongoDB
 
-Completion: 🎉 All verified!
+Completion: All verified!
 ```
 
 ---
 
-## 🔧 Technology Stack
+##  Technology Stack
 
 **Backend:**
 - Node.js + Express
@@ -130,7 +130,7 @@ Completion: 🎉 All verified!
 
 ---
 
-## 📊 Architecture
+##  Architecture
 
 ```
 ┌────────────────────────┐
@@ -165,7 +165,7 @@ Completion: 🎉 All verified!
 ```
 ---
 
-## 🧪 Testing
+## Testing
 
 ### Quick Test 
 
